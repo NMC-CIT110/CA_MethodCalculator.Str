@@ -50,17 +50,16 @@ namespace CA_MethodCalculator
                     //
                     Console.Clear();
                     Console.WriteLine();
-                    Console.WriteLine();
                     Console.WriteLine("\t\tThe Simple Calculator");
                     Console.WriteLine();
                     Console.WriteLine();
 
-                    Console.Write("Enter the first number:");
+                    Console.Write("\tEnter the first number:");
                     userResponse = Console.ReadLine();
 
                     if (!double.TryParse(userResponse, out number1))
                     {
-                        Console.WriteLine("You must enter a number. (2.4, 9, etc.)");
+                        Console.WriteLine("\tYou must enter a number. (2.4, 9, etc.)");
 
                         //
                         // pause for user
@@ -89,12 +88,12 @@ namespace CA_MethodCalculator
                     Console.WriteLine();
                     Console.WriteLine();
 
-                    Console.Write("Enter the second number:");
+                    Console.Write("\tEnter the second number:");
                     userResponse = Console.ReadLine();
 
                     if (!double.TryParse(userResponse, out number2))
                     {
-                        Console.WriteLine("You must enter a number. (2.4, 9, etc.)");
+                        Console.WriteLine("\tYou must enter a number. (2.4, 9, etc.)");
 
                         //
                         // pause for user
@@ -123,7 +122,7 @@ namespace CA_MethodCalculator
                     Console.WriteLine();
                     Console.WriteLine();
 
-                    Console.Write("Enter the operation ( ADD SUBTRACT MULTIPLY DIVIDE ):");
+                    Console.Write("\tEnter the operation ( ADD SUBTRACT MULTIPLY DIVIDE ):");
                     operation = Console.ReadLine().ToUpper();
 
                     //
@@ -156,7 +155,7 @@ namespace CA_MethodCalculator
                             break;
 
                         default:
-                            Console.WriteLine("You must enter a valid operation.");
+                            Console.WriteLine("\tYou must enter a valid operation.");
 
                             //
                             // pause for user
@@ -201,7 +200,7 @@ namespace CA_MethodCalculator
                     Console.WriteLine();
                     Console.WriteLine();
 
-                    Console.Write("Would you like to perform another calculation ( YES or NO ):");
+                    Console.Write("\tWould you like to perform another calculation ( YES or NO ):");
                     userResponse = Console.ReadLine().ToUpper();
 
                     //
@@ -209,7 +208,7 @@ namespace CA_MethodCalculator
                     //
                     if (!(userResponse == "NO" || userResponse == "YES"))
                     {
-                        Console.WriteLine("You must enter either 'YES' or 'NO'.");
+                        Console.WriteLine("\tYou must enter either 'YES' or 'NO'.");
 
                         //
                         // pause for user
