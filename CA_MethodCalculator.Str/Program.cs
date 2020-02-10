@@ -227,6 +227,14 @@ namespace CA_MethodCalculator
                     }
                 }
             }
+
+            //
+            // display closing screen
+            //
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("\t\tThank You for Using the Simple Calculator");
+            Console.WriteLine();
         }
     }
 }
